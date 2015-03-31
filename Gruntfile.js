@@ -35,9 +35,7 @@ module.exports = function (grunt) {
 					mediaQueries: {
 						xs: 'screen and (min-width: 0em)', // 0px
 						sm: 'screen and (min-width: 40em)', // 640px
-						md: 'screen and (min-width: 62em)', // 992px
-						lg: 'screen and (min-width: 90em)', // 1440px
-						xl: 'screen and (min-width: 120em)' // 1920px
+						md: 'screen and (min-width: 62em)' // 992px
 					}
 				},
 				dest: 'src/css/bambu-grid.css'
