@@ -18,8 +18,7 @@
     "test",
     "tests",
     "vendor",
-    "demo",
-    "src"
+    "demo"
   ],
   "dependencies": {
     "normalize-css": "~3.0.2"
