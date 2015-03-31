@@ -46,7 +46,10 @@ module.exports = function (grunt) {
 				src: [
 					'src/css/bambu-base.css',
 					'bower_components/normalize-css/normalize.css',
-					'src/css/bambu-grid.css'
+					'src/css/bambu-grid.css',
+					'src/css/bambu-typography.css',
+					'src/css/bambu-button.css',
+					'src/css/bambu-form.css'
 				],
 				dest: 'dist/css/bambu.css'
 			}

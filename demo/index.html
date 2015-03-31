@@ -7,11 +7,353 @@
 		<link rel="stylesheet" href="../src/css/bambu-base.css" />
 		<link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
 		<link rel="stylesheet" href="../src/css/bambu-grid.css" />
+		<link rel="stylesheet" href="../src/css/bambu-typography.css" />
+		<link rel="stylesheet" href="../src/css/bambu-button.css" />
+		<link rel="stylesheet" href="../src/css/bambu-form.css" />
 		<link rel="stylesheet" href="css/demo.css" />
 	</head>
 	<body>
+		<h1>Style guide</h1>
 
-		<h2>Nested grids</h2>
+		<h2 class="major">Typography</h2>
+
+		<h3 class="minor">Headings 1-6</h3>
+
+		<div class="example">
+			<h1>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</h1>
+			<h2>Nulla sit amet felis non tortor scelerisque egestas. Vivamus sed nulla enim. Curabitur semper ante quis pretium ullamcorper.</h2>
+			<h3>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</h3>
+			<h4>Aliquam sit amet elementum purus. Aliquam in tempor mauris. Fusce a facilisis mi. Duis vel imperdiet lacus, vel faucibus lectus.</h4>
+			<h5>Ut laoreet tristique nisi ac imperdiet. Vivamus consequat, metus nec pretium aliquam, tortor lacus faucibus lectus, in accumsan justo mi tempor massa.</h5>
+			<h6>Morbi iaculis sollicitudin neque ullamcorper commodo. Curabitur semper ante quis pretium ullamcorper. Vivamus in mauris nec odio aliquet pulvinar non sed risus.</h6>
+		</div>
+
+		<h3 class="minor">Paragraphs</h3>
+
+		<div class="example">
+			<p>Cras non libero leo. Nunc augue libero, placerat eget lacus sed, tristique fringilla mauris. Vivamus facilisis, lectus et varius tincidunt, leo ante ultricies quam, non dignissim metus ex in purus.</p>
+			<p>Maecenas suscipit augue sit amet hendrerit suscipit. Sed nec arcu sed nunc laoreet dapibus vitae et nibh. Praesent suscipit consectetur sollicitudin. Curabitur lacinia accumsan posuere.</p>
+			<p>Proin porta dui sed nunc pretium, ac volutpat arcu ultrices. Pellentesque faucibus auctor augue non tincidunt. Ut tincidunt tempor augue. Fusce aliquam diam sed lobortis mattis. Aliquam sit amet elementum purus. Aliquam in tempor mauris. Fusce a facilisis mi.</p>
+		</div>
+
+		<h3 class="minor">Block quotes</h3>
+
+		<div class="example">
+			<blockquote>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+
+			<blockquote class="blockquote-reverse">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+				<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+			</blockquote>
+		</div>
+
+		<h3 class="minor">Horizontal rule</h3>
+
+		<div class="example">
+			<p>Cras non libero leo.</p>
+			<hr />
+			<p>Proin porta dui sed nunc pretium, ac volutpat arcu ultrices.</p>
+		</div>
+
+		<h3 class="minor">Addresses</h3>
+
+		<div class="example">
+			<address>
+				<strong>Twitter, Inc.</strong><br />
+				795 Folsom Ave, Suite 600<br />
+				San Francisco, CA 94107<br />
+				<abbr title="Phone">P:</abbr> (123) 456-7890
+			</address>
+
+			<address>
+				<strong>Full Name</strong><br />
+				<a href="mailto:#">first.last@example.com</a>
+			</address>
+		</div>
+
+		<h3 class="minor">vCards</h3>
+
+		<div class="example">
+			<ul class="vcard">
+				<li class="fn">Gaius Baltar</li>
+				<li class="street-address">123 Colonial Ave.</li>
+				<li class="locality">Caprica City</li>
+				<li><span class="state">Caprica</span>, <span class="zip">12345</span></li>
+			</ul>
+		</div>
+
+		<h3 class="minor">Abbreviations</h3>
+
+		<div class="example">
+			<p>Cras justo odio, dapibus ac facilisis in, egestas eget <abbr title="Aliquam Vel Pharetra">AVP</abbr>.</p>
+		</div>
+
+		<h3 class="minor">Inline code</h3>
+
+		<div class="example">
+			<p>For example, <code>&lt;section&gt;</code> should be wrapped as inline.</p>
+		</div>
+
+		<h3 class="minor">User input</h3>
+
+		<div class="example">
+			<p>
+				To switch directories, type <kbd>cd</kbd> followed by the name of the directory.<br />
+				To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+			</p>
+		</div>
+
+		<h3 class="minor">Basic code block</h3>
+
+		<div class="example">
+			<pre>&lt;p&gt;Sample text here...&lt;/p&gt;</pre>
+		</div>
+
+		<h3 class="minor">Variables</h3>
+
+		<div class="example">
+			<p><var>y</var> = <var>m</var><var>x</var> + <var>b</var></p>
+		</div>
+
+		<h3 class="minor">Sample out</h3>
+
+		<div class="example">
+			<p><samp>This text is meant to be treated as sample output from a computer program.</samp></p>
+		</div>
+
+		<h3 class="minor">Description lists</h3>
+
+		<div class="example">
+			<dl>
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+			</dl>
+		</div>
+
+		<h3 class="minor">Horizontal description lists</h3>
+
+		<div class="example">
+			<dl class="dl-horizontal">
+				<dt>Description lists</dt>
+				<dd>A description list is perfect for defining terms.</dd>
+				<dt>Euismod</dt>
+				<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+				<dd>Donec id elit non mi porta gravida at eget metus.</dd>
+				<dt>Malesuada porta</dt>
+				<dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+				<dt>Felis euismod semper eget lacinia</dt>
+				<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+			</dl>
+		</div>
+
+		<h3 class="minor">Ordered lists</h3>
+
+		<div class="example">
+			<ol>
+				<li>Morbi iaculis sollicitudin neque ullamcorper commodo. Curabitur semper ante quis pretium ullamcorper. Vivamus in mauris nec odio aliquet pulvinar non sed risus.</li>
+				<li>Cras non libero leo. Nunc augue libero, placerat eget lacus sed, tristique fringilla mauris. Vivamus facilisis, lectus et varius tincidunt, leo ante ultricies quam, non dignissim metus ex in purus. Maecenas suscipit augue sit amet hendrerit suscipit. Sed nec arcu sed nunc laoreet dapibus vitae et nibh. Praesent suscipit consectetur sollicitudin. Curabitur lacinia accumsan posuere.</li>
+				<li>
+					<ol>
+						<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+						<li>
+							<ol>
+								<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+								<li>
+									<ol>
+										<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+										<li>
+											<ol>
+												<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+												<li>Nulla sit amet felis non tortor scelerisque egestas. Vivamus sed nulla enim. Curabitur semper ante quis pretium ullamcorper.</li>
+												<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+											</ol>
+										</li>
+										<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+									</ol>
+								</li>
+								<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+							</ol>
+						</li>
+						<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+					</ol>
+				</li>
+				<li>Aliquam sit amet elementum purus. Aliquam in tempor mauris. Fusce a facilisis mi. Duis vel imperdiet lacus, vel faucibus lectus.</li>
+				<li>Ut laoreet tristique nisi ac imperdiet. Vivamus consequat, metus nec pretium aliquam, tortor lacus faucibus lectus, in accumsan justo mi tempor massa.</li>
+			</ol>
+		</div>
+
+		<h3 class="minor">Unordered lists</h3>
+
+		<div class="example">
+			<ul>
+				<li>Morbi iaculis sollicitudin neque ullamcorper commodo. Curabitur semper ante quis pretium ullamcorper. Vivamus in mauris nec odio aliquet pulvinar non sed risus.</li>
+				<li>Cras non libero leo. Nunc augue libero, placerat eget lacus sed, tristique fringilla mauris. Vivamus facilisis, lectus et varius tincidunt, leo ante ultricies quam, non dignissim metus ex in purus. Maecenas suscipit augue sit amet hendrerit suscipit. Sed nec arcu sed nunc laoreet dapibus vitae et nibh. Praesent suscipit consectetur sollicitudin. Curabitur lacinia accumsan posuere.</li>
+				<li>
+					<ul>
+						<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+						<li>
+							<ul>
+								<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+								<li>
+									<ul>
+										<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+										<li>
+											<ul>
+												<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+												<li>Nulla sit amet felis non tortor scelerisque egestas. Vivamus sed nulla enim. Curabitur semper ante quis pretium ullamcorper.</li>
+												<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+											</ul>
+										</li>
+										<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+									</ul>
+								</li>
+								<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+							</ul>
+						</li>
+						<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+					</ul>
+				</li>
+				<li>Aliquam sit amet elementum purus. Aliquam in tempor mauris. Fusce a facilisis mi. Duis vel imperdiet lacus, vel faucibus lectus.</li>
+				<li>Ut laoreet tristique nisi ac imperdiet. Vivamus consequat, metus nec pretium aliquam, tortor lacus faucibus lectus, in accumsan justo mi tempor massa.</li>
+			</ul>
+		</div>
+
+		<h3 class="minor">Mixed lists</h3>
+
+		<div class="example">
+			<ol>
+				<li>Morbi iaculis sollicitudin neque ullamcorper commodo. Curabitur semper ante quis pretium ullamcorper. Vivamus in mauris nec odio aliquet pulvinar non sed risus.</li>
+				<li>Cras non libero leo. Nunc augue libero, placerat eget lacus sed, tristique fringilla mauris. Vivamus facilisis, lectus et varius tincidunt, leo ante ultricies quam, non dignissim metus ex in purus. Maecenas suscipit augue sit amet hendrerit suscipit. Sed nec arcu sed nunc laoreet dapibus vitae et nibh. Praesent suscipit consectetur sollicitudin. Curabitur lacinia accumsan posuere.</li>
+				<li>
+					<ul>
+						<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+						<li>
+							<ol>
+								<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+								<li>
+									<ul>
+										<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+										<li>
+											<ol>
+												<li>Curabitur lobortis neque eu venenatis varius. Aliquam vel pharetra felis, id scelerisque nisi.</li>
+												<li>Nulla sit amet felis non tortor scelerisque egestas. Vivamus sed nulla enim. Curabitur semper ante quis pretium ullamcorper.</li>
+												<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+											</ol>
+										</li>
+										<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+									</ul>
+								</li>
+								<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+							</ol>
+						</li>
+						<li>Vivamus in mauris nec odio aliquet pulvinar non sed risus. In viverra risus eu erat laoreet, vitae iaculis nisl scelerisque.</li>
+					</ul>
+				</li>
+				<li>Aliquam sit amet elementum purus. Aliquam in tempor mauris. Fusce a facilisis mi. Duis vel imperdiet lacus, vel faucibus lectus.</li>
+				<li>Ut laoreet tristique nisi ac imperdiet. Vivamus consequat, metus nec pretium aliquam, tortor lacus faucibus lectus, in accumsan justo mi tempor massa.</li>
+			</ol>
+		</div>
+
+		<h2 class="major">Buttons</h2>
+
+		<h3 class="minor">Default state</h3>
+
+		<div class="example">
+			<a class="button" href="#">Button</a>
+			<button class="button">Button</button>
+		</div>
+
+		<h3 class="minor">Disabled state</h3>
+
+		<div class="example">
+			<a class="button button-disabled" href="#">Disabled button</a>
+			<button class="button button-disabled">Disabled button</button>
+		</div>
+
+		<h3 class="minor">Active state</h3>
+
+		<div class="example">
+			<a class="button button-active" href="#">Active button</a>
+			<button class="button button-active">Active button</button>
+		</div>
+
+		<h3 class="minor">Sizes</h3>
+
+		<div class="example">
+			<a class="button button-xs" href="#">Extra small button</a>
+			<button class="button button-xs">Extra small button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-sm" href="#">Small button</a>
+			<button class="button button-sm">Small button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-md" href="#">Medium button</a>
+			<button class="button button-md">Medium button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-lg" href="#">Large button</a>
+			<button class="button button-lg">Large button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-xl" href="#">Extra large button</a>
+			<button class="button button-xl">Extra large button</button>
+		</div>
+
+		<h3 class="minor">Colours</h3>
+
+		<div class="example">
+			<a class="button button-primary" href="#">Primary button</a>
+			<button class="button button-primary">Primary button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-info" href="#">Info button</a>
+			<button class="button button-info">Info button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-success" href="#">Success button</a>
+			<button class="button button-success">Success button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-error" href="#">Error button</a>
+			<button class="button button-error">Error button</button>
+		</div>
+
+		<div class="example">
+			<a class="button button-warning" href="#">Warning button</a>
+			<button class="button button-warning">Warning button</button>
+		</div>
+
+		<h3 class="minor">Icons</h3>
+
+		<div class="example">
+			@todo
+		</div>
+
+		<h2 class="major">Forms</h2>
+
+		<div class="example">
+			@todo
+		</div>
+
+		<h2 class="major">Grids</h2>
+
+		<h3 class="minor">Nested grids</h3>
 
 		<div class="row">
 			<div class="xs-8 col">8
@@ -28,7 +370,7 @@
 			<div class="xs-4 col">4</div>
 		</div>
 
-		<h2>Offsets</h2>
+		<h3 class="minor">Offsets</h3>
 
 		<div class="row">
 			<div class="md-1 col">1</div>
@@ -47,7 +389,7 @@
 			<div class="md-8 md-offset-3 col">8, offset 3</div>
 		</div>
 
-		<h2>Incomplete rows</h2>
+		<h3 class="minor">Incomplete rows</h3>
 
 		<div class="row">
 			<div class="sm-3 col">3</div>
@@ -60,7 +402,7 @@
 			<div class="sm-3 col end">3 end</div>
 		</div>
 
-		<h2>Collapse/uncollapse rows</h2>
+		<h3 class="minor">Collapse/uncollapse rows</h3>
 
 		<div class="row sm-uncollapse md-collapse">
 			<div class="xs-6 col">
@@ -77,7 +419,7 @@
 			</div>
 		</div>
 
-		<h2>Centered cols</h2>
+		<h3 class="minor">Centered columns</h3>
 
 		<div class="row">
 			<div class="xs-3 xs-centered col">3 centered</div>
@@ -92,7 +434,7 @@
 			<div class="xs-11 xs-centered col">11 centered</div>
 		</div>
 
-		<h2>Source ordering</h2>
+		<h3 class="minor">Source ordering</h3>
 
 		<div class="row">
 			<div class="xs-10 xs-push-2 col">10</div>
@@ -114,6 +456,5 @@
 			<div class="sm-6 sm-push-6 col">6</div>
 			<div class="sm-6 sm-pull-6 col">6, last</div>
 		</div>
-
 	</body>
 </html>

@@ -1,5 +1,5 @@
 body {
-	padding: 5%;
+	padding: 5% 10%;
 }
 
 .row {
@@ -17,4 +17,22 @@ body {
 
 .col .col .col {
 	background: #003366;
+}
+
+.major {
+	margin: 2em 0 1em;
+	padding-bottom: 0.5em;
+	font-size: 2em;
+	border-bottom: 1px solid #DDD;
+}
+
+.minor {
+	font-size: 1.5em;
+}
+
+.example {
+	margin: 1em 0;
+	padding: 1em;
+	border: 1px solid #DDD;
+	border-radius: 0.25em;
 }

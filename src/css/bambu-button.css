@@ -1,0 +1,178 @@
+/**
+ * @file
+ * Button styles
+ *
+ * @author Hein Bekker <hein@netbek.co.za>
+ * @copyright (c) 2015 Hein Bekker
+ * @license https://github.com/netbek/bambu/LICENSE MIT license
+ */
+
+.button {
+    display: inline-block;
+    zoom: 1;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+.button {
+    font-family: inherit;
+    font-size: 100%;
+	line-height: normal;
+	padding: 0.75em 1em;
+    color: #000;
+	border: 1px solid #CCC;
+    background-color: #FFF;
+    text-decoration: none;
+}
+
+.button-hover,
+.button:hover,
+.button:focus {
+	color: #000;
+	border: 1px solid #999;
+    background-color: #EEE;
+}
+
+.button:focus {
+    outline: 0;
+}
+
+.button-active,
+.button-active:hover,
+.button-active:focus,
+.button:active {
+	border: 1px solid #666;
+    background-color: #CCC;
+}
+
+.button[disabled],
+.button-disabled,
+.button-disabled:hover,
+.button-disabled:focus,
+.button-disabled:active {
+	border: 1px solid #CCC;
+    background-color: #FFF;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: alpha(opacity=50);
+    -khtml-opacity: 0.50;
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.button-hidden {
+    display: none;
+}
+
+/* Firefox: Get rid of the inner focus border */
+.button::-moz-focus-inner{
+    padding: 0;
+    border: 0;
+}
+
+.button-xs {
+	font-size: 50%;
+}
+
+.button-sm {
+	font-size: 75%;
+}
+
+.button-md {
+	font-size: 100%;
+}
+
+.button-lg {
+	font-size: 125%;
+}
+
+.button-xl {
+	font-size: 150%;
+}
+
+.button-primary {
+	background-color: #337AB7;
+	border-color: #2E6DA4;
+	color: #FFF;
+}
+
+.button-primary:hover,
+.button-primary:focus,
+.button-primary:active {
+	background-color: #286090;
+	color: #FFF;
+}
+
+.button-success {
+	background-color: #5CB85C;
+	border-color: #4CAE4C;
+	color: #FFF;
+}
+
+.button-success:hover,
+.button-success:focus,
+.button-success:active {
+	background-color: #449D44;
+	border-color: #4CAE4C;
+	color: #FFF;
+}
+
+.button-error {
+	background-color: #D9534F;
+	border-color: #AC2925;
+	color: #FFF;
+}
+
+.button-error:hover,
+.button-error:focus,
+.button-error:active {
+	background-color: #C9302C;
+	border-color: #AC2925;
+	color: #FFF;
+}
+
+.button-warning {
+	background-color: #F0AD4E;
+	border-color: #EEA236;
+	color: #FFF;
+}
+
+.button-warning:hover,
+.button-warning:focus,
+.button-warning:active {
+	background-color: #EC971F;
+	border-color: #EEA236;
+	color: #FFF;
+}
+
+.button-info {
+	background-color: #5BC0DE;
+	border-color: #46B8DA;
+	color: #FFF;
+}
+
+.button-info:hover,
+.button-info:focus,
+.button-info:active {
+	background-color: #31B0D5;
+	border-color: #46B8DA;
+	color: #FFF;
+}
