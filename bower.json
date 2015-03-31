@@ -1,0 +1,27 @@
+{
+  "name": "bambu",
+  "version": "0.0.1",
+  "description": "Minimal CSS framework",
+  "homepage": "https://github.com/netbek/bambu",
+  "author": {
+    "name": "Hein Bekker",
+    "email": "hein@netbek.co.za",
+    "url": "http://netbek.co.za"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/netbek/bambu/LICENSE"
+  },
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests",
+    "vendor",
+    "demo",
+    "src"
+  ],
+  "dependencies": {
+    "normalize-css": "~3.0.2"
+  }
+}

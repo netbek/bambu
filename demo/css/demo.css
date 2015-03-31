@@ -1,0 +1,20 @@
+body {
+	padding: 5%;
+}
+
+.row {
+	margin-bottom: 1em;
+}
+
+.col {
+	background: #007FFF;
+	color: #FFF;
+}
+
+.col .col {
+	background: #0066CC;
+}
+
+.col .col .col {
+	background: #003366;
+}

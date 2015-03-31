@@ -1,0 +1,193 @@
+/**
+ * @file
+ * Base styles
+ *
+ * @author Hein Bekker <hein@netbek.co.za>
+ * @copyright (c) 2015 Hein Bekker
+ * @license https://github.com/netbek/bambu/LICENSE MIT license
+ */
+
+/*----------------------------------------------------------------------
+OPINIONATED DEFAULTS
+----------------------------------------------------------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video,
+canvas {
+	font-family: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+em,
+i {
+	font-style: italic;
+}
+
+embed,
+object {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+/* Remove the gap between images and the bottom of their containers https://github.com/h5bp/html5-boilerplate/issues/440 */
+img {
+	vertical-align: middle;
+}
+
+img,
+a img,
+*:link img,
+*:visited img {
+	border: none;
+	box-sizing: padding-box;
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+	-ms-interpolation-mode: bicubic;
+}
+
+sub,
+sup {
+	font-size: 75%;
+	top: -0.4em;
+}
+
+/* Enable CSS active pseudo styles in Mobile Safari http://miniapps.co.uk/blog/post/enable-css-active-pseudo-styles-in-mobile-safari/ */
+html {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	tap-highlight-color: rgba(0,0,0,0);
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------
+HELPER CLASSES
+----------------------------------------------------------------------*/
+
+/* Prevent callout */
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if they have been set as display: none */
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/* Image replacement */
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible {
+    visibility: hidden;
+}
+
+/* Clearfix helper used to contain floats (Firefox 3.5+, Safari 4+, Chrome, Opera 9+, IE 6+): h5bp.com/q */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Legacy clearfix */
+.clear {
+	display: block;
+	clear: both;
+	overflow: hidden;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.prevent-text-breakouts {
+	-ms-word-break: break-word;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+.nospeak {
+	speak: none;
+}
